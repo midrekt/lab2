@@ -28,10 +28,17 @@ namespace Program
 
                     break;
                 case '*':
-                    Console.WriteLine(a * b);
+
                     break;
                 case '/':
-
+                    if (b==0)
+                    {
+                        Console.WriteLine("На ноль делить нельзя");
+                    }
+                    else
+                    {
+                        Console.WriteLine(a / b);
+                    }
                     break;
                 default:
                     Console.WriteLine("Неизвестный оператор");
